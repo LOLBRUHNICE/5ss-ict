@@ -1,0 +1,15 @@
+.sb {
+	scrollbar-width: thin;
+	scrollbar-color: #eaeaea transparent;
+	scrollbar-gutter: stable;
+}
+.sb::-webkit-scrollbar {
+	width: 5px;
+}
+.sb::-webkit-scrollbar-thumb {
+	background: #727272;
+	border-radius: 10px;
+}
+.sb::-webkit-scrollbar-track {
+	background: transparent;
+}

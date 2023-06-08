@@ -1,0 +1,14 @@
+[
+    {
+        "title": "必修部分",
+        "path": "/comp",
+        "isPage": false,
+        "items": []
+    },
+    {
+        "title": "選修部分",
+        "path": "/elec",
+        "isPage": false,
+        "items": []
+    }
+]

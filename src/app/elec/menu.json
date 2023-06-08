@@ -1,0 +1,38 @@
+{
+    "title": "選修部分",
+    "path": "/elec",
+    "isPage": false,
+    "items": [
+        {
+            "title": "E1",
+            "path": "/1",
+            "isPage": false,
+            "items": [
+                {
+                    "title": "E1-1",
+                    "path": "/1-1",
+                    "isPage": true,
+                    "items": [
+                        {
+                            "title": "E1-1-1",
+                            "path": "/1-1-1",
+                            "cumulativePath": "/elec/1/1-1/1-1-1"
+                        }
+                    ],
+                    "cumulativePath": "/elec/1/1-1"
+                }
+            ],
+            "cumulativePath": "/elec/1"
+        },
+        {
+            "title": "E2",
+            "path": "/2",
+            "cumulativePath": "/elec/2"
+        },
+        {
+            "title": "E3",
+            "path": "/3",
+            "cumulativePath": "/elec/3"
+        }
+    ]
+}
