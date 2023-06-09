@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import NavBar from '@/components/NavBar';
 import menus from './menus.json';
 import { ReactNode } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                     </div>
                 </main>
             </body>
+            <Analytics />
         </html>
     );
 }

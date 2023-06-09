@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.2.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:5.59.9"],\
             ["@typescript-eslint/parser", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:5.59.9"],\
+            ["@vercel/analytics", "npm:1.0.1"],\
             ["autoprefixer", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:10.4.14"],\
             ["concurrently", "npm:8.1.0"],\
             ["dayjs", "npm:1.11.8"],\
@@ -63,6 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.2.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:5.59.9"],\
             ["@typescript-eslint/parser", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:5.59.9"],\
+            ["@vercel/analytics", "npm:1.0.1"],\
             ["autoprefixer", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:10.4.14"],\
             ["concurrently", "npm:8.1.0"],\
             ["dayjs", "npm:1.11.8"],\
@@ -877,6 +879,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/visitor-keys", "npm:5.59.9"],\
             ["@typescript-eslint/types", "npm:5.59.9"],\
             ["eslint-visitor-keys", "npm:3.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@vercel/analytics", [\
+        ["npm:1.0.1", {\
+          "packageLocation": "./.yarn/cache/@vercel-analytics-npm-1.0.1-545fdc4bb4-6876e1d086.zip/node_modules/@vercel/analytics/",\
+          "packageDependencies": [\
+            ["@vercel/analytics", "npm:1.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
