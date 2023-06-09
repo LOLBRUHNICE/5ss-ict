@@ -10,7 +10,7 @@ export default function SideBar({ menu }: { menu: Menu }) {
     const router = useRouter();
     const currentConfig = [menu];
     for (const p of pathList.slice(1, -1)) {
-        const segment = currentConfig[currentConfig.length - 1].items.find(
+        const segment = currentConfig.at(-1)?.items.find(
             (item) => item.path === `/${p}`,
         );
         if (!segment) break;
@@ -49,14 +49,14 @@ export default function SideBar({ menu }: { menu: Menu }) {
                         )}
                     </div>
                 )}
-                <div className="text-[30px]">{path[path.length - 1].title}</div>
+                <div className="text-[30px]">{path.at(-1)?.title}</div>
             </div>
             <div className="overflow-hidden relative">
                 <nav
                     className={`overflow-y-scroll flex-col flex h-[calc(100vh-250px)] ${styles.sb}`}
                 >
                     <ul>
-                        {path[path.length - 1].items.map((item) => (
+                        {path.at(-1)?.items.map((item) => (
                             <li
                                 key={item.path}
                                 className={`my-1.5 ${
