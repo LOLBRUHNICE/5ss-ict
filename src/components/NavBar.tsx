@@ -8,7 +8,7 @@ export default function NavBar({ menus }: { menus: Menu[] }) {
     const pathName = usePathname();
     const router = useRouter();
     return (
-        <header className="w-full sticky top-0 h-[64px] flex items-center content-around z-[9999] px-[35px] bg-[#1e1e1e]">
+        <header className="w-full sticky top-0 h-[64px] flex items-center content-around z-[9999] px-[35px] [box-shadow:_inset_0_-1px_0_0_#333]">
             <nav className="w-full flex items-center">
                 <div
                     id="pcLinks"

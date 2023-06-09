@@ -18,8 +18,8 @@ export default function SideBar({ menu }: { menu: Menu }) {
     }
     const [path, setPath] = useState([...currentConfig]);
     return (
-        <div className="justify-between flex-col flex min-w-[250px] top-[121px] sticky">
-            <div className="text-[12.5px]">
+        <div className="justify-between flex-col flex min-w-[250px] top-[121px] sticky [border-right:_1px_solid_#6e6e6e]">
+            <div className="text-[12.5px] h-[70px]">
                 {path.length !== 1 && (
                     <div className="flex">
                         {path.map(
