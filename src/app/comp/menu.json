@@ -1,6 +1,7 @@
 {
     "title": "必修部分",
     "path": "/comp",
-    "isPage": false,
-    "items": []
+    "isPage": true,
+    "items": [],
+    "cumulativePath": "/comp"
 }

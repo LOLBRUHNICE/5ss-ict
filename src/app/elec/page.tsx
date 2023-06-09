@@ -1,5 +1,5 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
-export default function Home() {
-	return <Fragment>Here is Elective</Fragment>;
+export default function Elec() {
+    return <Fragment>Here is Elective</Fragment>;
 }

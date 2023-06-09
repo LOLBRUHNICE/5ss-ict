@@ -1,7 +1,7 @@
 {
     "title": "選修部分",
     "path": "/elec",
-    "isPage": false,
+    "isPage": true,
     "items": [
         {
             "title": "E1",
@@ -34,5 +34,6 @@
             "path": "/3",
             "cumulativePath": "/elec/3"
         }
-    ]
+    ],
+    "cumulativePath": "/elec"
 }
