@@ -31,13 +31,13 @@ export default function SideBar({ menu }: { menu: Menu }) {
                                                 e.preventDefault();
                                                 const newPath = [...path];
                                                 newPath.length = i + 1;
-                                                setPath(newPath);
                                                 if (newPath[i].isPage) {
                                                     router.push(
                                                         newPath[i]
                                                             .cumulativePath,
                                                     );
                                                 }
+                                                setPath(newPath);
                                             }}
                                             className="text-gray-400 hover:text-gray-200 cursor-pointer [transition:color_.2s_ease]"
                                         >
@@ -68,10 +68,10 @@ export default function SideBar({ menu }: { menu: Menu }) {
                                 <div
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        if (item.items)
-                                            setPath([...path, item]);
                                         if (item.isPage || !item.items)
                                             router.push(item.cumulativePath);
+                                        if (item.items)
+                                            setPath([...path, item]);
                                     }}
                                     className="flex items-center justify-between pr-[20px]"
                                 >
