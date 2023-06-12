@@ -24,7 +24,7 @@ export default function SideBar() {
     }, [menu]);
     return (
         <div className="justify-between flex-col flex min-w-[250px] top-[64px] sticky [border-right:_1px_solid_#6e6e6e] left-0">
-            {path.length && (
+            {path.length !== 0 && (
                 <>
                     <div className="text-[12.5px] h-[120px] pt-[40px]">
                         {path.length !== 1 && (
