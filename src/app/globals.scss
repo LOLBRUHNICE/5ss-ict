@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$DarkBG: #252525;
+$DarkText: #FFFFFF;
+$WhiteBG: #FFFFFF;
+$WhiteText: #000000;
+
+:root {
+    user-select: none;
+}
+
+
+body {
+    color: $WhiteText;
+    background: $WhiteBG;
+    @media (prefers-color-scheme: dark) {
+        & {
+            background: $DarkBG;
+            color: $DarkText
+        }
+    }
+}

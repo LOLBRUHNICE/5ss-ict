@@ -1,7 +1,13 @@
-import { ReactNode } from 'react';
-import menu from './menu.json';
-import MenuLayout from '@/components/MenuLayout';
+'use client'
+
+import { LayoutContext } from '@/components/RootLayout';
+import { ReactNode, useContext, useEffect } from 'react';
+import menu from "./menu.json"
 
 export default function Layout({ children }: { children: ReactNode }) {
-    return <MenuLayout menu={menu}>{children}</MenuLayout>;
+    const {setSideBarMenu} = useContext(LayoutContext)
+    useEffect(() => {
+        setSideBarMenu(menu)
+    }, [])
+    return children;
 }

@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:18.2.0"],\
             ["react-icons", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:4.9.0"],\
+            ["sass", "npm:1.63.3"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["ts-node", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
@@ -78,6 +79,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:18.2.0"],\
             ["react-icons", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:4.9.0"],\
+            ["sass", "npm:1.63.3"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["ts-node", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
@@ -3030,6 +3032,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["immutable", [\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/immutable-npm-4.3.0-6120b6947c-bbd7ea99e2.zip/node_modules/immutable/",\
+          "packageDependencies": [\
+            ["immutable", "npm:4.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["import-fresh", [\
         ["npm:3.3.0", {\
           "packageLocation": "./.yarn/cache/import-fresh-npm-3.3.0-3e34265ca9-2cacfad06e.zip/node_modules/import-fresh/",\
@@ -3904,7 +3915,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.14"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:7dfb01e7f556a1086fa030421c850e65f8132be5a429027e40277c6e3e5e6c431231e3c8ef1bbd36dbd7528350e82f00198442a5be101ae884271e94343e1611#npm:18.2.0"],\
-            ["sass", null],\
+            ["sass", "npm:1.63.3"],\
             ["styled-jsx", "virtual:74abff152e226612c064ebe13307bd5d1acccc73bd77bd2568318b5eff2510ac97bbdb8be9899f8875bdd455ffdd31f2b918ac5fe16f7ff5dce11fa9c043c149#npm:5.1.1"],\
             ["zod", "npm:3.21.4"]\
           ],\
@@ -4810,6 +4821,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-cab8f25ae6.zip/node_modules/safer-buffer/",\
           "packageDependencies": [\
             ["safer-buffer", "npm:2.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sass", [\
+        ["npm:1.63.3", {\
+          "packageLocation": "./.yarn/cache/sass-npm-1.63.3-5219516133-41d1d7e875.zip/node_modules/sass/",\
+          "packageDependencies": [\
+            ["sass", "npm:1.63.3"],\
+            ["chokidar", "npm:3.5.3"],\
+            ["immutable", "npm:4.3.0"],\
+            ["source-map-js", "npm:1.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

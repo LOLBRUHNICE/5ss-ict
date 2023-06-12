@@ -1,9 +1,9 @@
-import './globals.css';
+import './globals.scss';
 import { Inter } from 'next/font/google';
-import NavBar from '@/components/NavBar';
 import menus from './menus.json';
 import { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import RootLayout from '@/components/RootLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -12,16 +12,13 @@ export const metadata = {
     description: 'note for ict',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
-            <body className={`${inter.className} bg-[#252525] relative`}>
-                <NavBar menus={menus} />
-                <main>
-                    <div className="py-10 px-4 max-w-[1232px] min-h-[calc(100vh-64px-2.5rem-2.5rem)] items-center justify-center flex relative mx-auto gap-x-4">
-                        {children}
-                    </div>
-                </main>
+            <body className={`${inter.className} relative`}>
+                <RootLayout menus={menus}>
+                    {children}
+                </RootLayout>
             </body>
             <Analytics />
         </html>
