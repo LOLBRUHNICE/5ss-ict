@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { RiArrowRightSFill } from 'react-icons/ri';
 import { LayoutContext } from '../RootLayout';
+import Link from 'next/link';
 
 export default function SideBar() {
     const { sideBarMenu: menu } = useContext(LayoutContext);
@@ -78,18 +79,29 @@ export default function SideBar() {
                                         <div
                                             onClick={(e) => {
                                                 e.preventDefault();
-                                                if (item.isPage || !item.items)
-                                                    router.push(
-                                                        item.cumulativePath,
-                                                    );
                                                 if (item.items)
                                                     setPath([...path, item]);
                                             }}
                                             className="flex items-center justify-between pr-[20px]"
                                         >
-                                            {item.title}{' '}
-                                            {item.items && (
-                                                <RiArrowRightSFill />
+                                            {item.isPage || !item.items ? (
+                                                <Link
+                                                    href={item.cumulativePath}
+                                                    prefetch
+                                                    className="flex items-center justify-between w-full"
+                                                >
+                                                    {item.title}{' '}
+                                                    {item.items && (
+                                                        <RiArrowRightSFill />
+                                                    )}
+                                                </Link>
+                                            ) : (
+                                                <>
+                                                    {item.title}
+                                                    {item.items && (
+                                                        <RiArrowRightSFill />
+                                                    )}
+                                                </>
                                             )}
                                         </div>
                                     </li>
